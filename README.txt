@@ -1,6 +1,6 @@
 1. Download xammp server for windows from https://www.apachefriends.org/download.html.
 
-2. Install xampp server on your system.
+2. Install xampp server on your system and start apache and mysql servers.
 
 3. Open your browser and enter localhost/phpmyadmin.
 
@@ -17,3 +17,5 @@
 8. Enter teller credentials to login. [Teller Username = teller, Teller Password = password].
 
 10. Teller can now start using the system. Enjoy.
+
+PLEASE NOTE: THE SERVER MUST BE ON ANYTIME BEFORE THE APPLICATION CAN BE USED.
