@@ -1,0 +1,21 @@
+create database shop;
+
+create table shop.admintbl(adminId int not null auto_increment primary key,adminPassword text not null,adminUsername text not null);
+
+create table shop.historytbl(historyId int not null auto_increment primary key,historyActivity text not null,historyTime timestamp not null default current_timestamp on update current_timestamp);
+
+create table shop.salestbl(saleId int not null auto_increment primary key,salesMade double not null,dateOfSales timestamp not null default current_timestamp on update current_timestamp);
+
+create table shop.searchtbl(searchId int not null auto_increment primary key,searchTerm text not null);
+
+create table shop.stocktbl(stockId int not null auto_increment primary key,stockName text not null,stockPrice double not null,stockQuantity int not null);
+
+create table shop.tellertbl(tellerId int not null auto_increment primary key,tellerName text not null,tellerPassword text not null);
+
+insert into shop.admintbl(adminUsername,adminPassword) values('admin','password');
+
+insert into shop.tellertbl(tellerName,tellerPassword) values('teller','password');
+
+insert into shop.searchtbl(searchId) values(1);
+
+insert into shop.salestbl(saleId) values(1);
